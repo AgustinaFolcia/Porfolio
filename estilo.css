@@ -45,7 +45,7 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+    color: #ffffff;
 }
 .nav-responsive{
     background-color: #1CB698;
@@ -58,7 +58,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/fondo\ portfolio.png);
+    url(img/porfolio\ 2.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
