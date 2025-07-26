@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Agustina</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Agustina Folcia.jpg" alt="">
+            </div>
+            <h1>AGUSTINA FOLCIA</h1>
+            <h2>Data Analyst - Business Intelligence</h2>
+            <div class="redes">
+                <a href="https://wa.me/542954681796" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/agustina-folcia-486253234/" target="_blank" ><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Agustina.</span> Analista de datos con enfoque en los detalles y experiencia en validación de procesos, almacenamiento de datos y análisis de las necesidades de negocio. He demostrado comprender los requisitos de clientes y traducirlos en planes y proyectos viables. Me especializo en la transformación de datos complejos en insights accionables para la toma de decisiones estratégicas. Poseo habilidad comprobada en el uso de herramientas como Power BI, SQL y Python para optimizar procesos y mejorar la eficiencia operativa.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Contacto</strong>
+                            (+54) 2954681796
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            agustina.folcia@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span> Sr. Data Analyst</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="img/Agustina Folcia Curriculum 2025.pdf" target="_blank">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Power Bi</span>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill">
+                        <span>Análisis Estadístico</span>
+                    </div>
+                    <div class="skill">
+                        <span>Modelado y limpieza de datos</span>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Diplomatura en Business Analytics</h4>
+                        <span class="casa">Universidad del Aconcagua</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Gestión de Proyectos, extracción de base de datos, estadística y algoritmos de Machine Learning.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Data Analytics</h4>
+                        <span class="casa">Coder House</span>
+                        <span class="fecha">2022</span>
+                        <p>Proyectos end to end de análisis y explotación de datos. Desarrollo y diseño de tableros de control implementando técnicas de medición, manipulación y visualización de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Ciencia Política</h4>
+                        <span class="casa">Universidad de Buenos Aires</span>
+                        <span class="fecha">2014 - 2019</span>
+                        <p>Grado en Ciencia Política con especialización/orientación en Opinión Pública.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+<div class="item der">
+                        <h4>SR IT BI Analyst</h4>
+                        <span class="casa">Cirion Technologies</span>
+                        <span class="fecha">2024 - presente</span>
+                        <p>Integración de múltiples fuentes y automatización con Python y Api's. Generación de consultas en SQL, desarrollo de dashboards en Power BI, análisis de datos y extracción de información para la generación de insights.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de datos</h4>
+                        <span class="casa">Klozer</span>
+                        <span class="fecha">2023 -2024</span>
+                        <p>Integración de múltiples fuentes de datos mediante procesos ETL. Automatización de procesos manuales. Gestión de bases de datos a gran escala. Trabajo conjunto con equipos multifuncionales.Confección de informes/paneles interactivos en Power Bi.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Docente</h4>
+                        <span class="casa">Universidad de Buenos Aires</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p> Asignaturas: “Población y Análisis de Datos” y "Computación" </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tutora Data Analytics</h4>
+                        <span class="casa">Fundación YPF: Programa Ingenias + y Media Chicas</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Seguimiento a estudiantes, nexo con el equipo docente y espacios de tutoria a estudiantes del curso durante un periodo de dos cuatrimestres</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de Datos</h4>
+                        <span class="casa">Gobierno de la Ciudad de Buenos Aires</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Producción de informes mensuales. Generación de procesos de toma de decisiones mejorados con técnicas de análisis y visualización de datos. Trabajo con equipos interdisciplinarios. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Coordinadora Técnica</h4>
+                        <span class="casa">Universidad de Buenos Aires</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Coordine equipos docentes para la correcta implementación de los programas de estudio. Implemente estrategias de integración continua para mejores espacios de aprendizaje en la comunidad educativa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Líder de mesa de ayuda</h4>
+                        <span class="casa">Ministerio de Educación de la Nación Argentina</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Colaboración con distintos equipos y áreas para lograr flujos de trabajo eficientes. Genere espacios de trabajo colaborativo con organizaciones de la sociedad civil e instituciones educativas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiZTc1Yjc2MWYtZTRkOC00NWJhLTkzY2ItMjNlMTUyOGE3NjU4IiwidCI6IjA4ZDEwM2YyLWU0NzAtNGIzYy1iYjc1LTNhMWRmMDhjODRiMSIsImMiOjR9&pageName=ReportSection4bb24f7ce4429e0d0797" target="_blank">
+                <div class="proyecto">
+                    <img src="img/img 11.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Navegación aérea comercial Argentina</h3>
+                        <p>Power Bi</p>
+                    </div>
+                </div>
+             </a>
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiYmJkNWU1MDItZThkYy00YzFiLWE0ZWItNjYwN2JlODk4MmM4IiwidCI6IjA4ZDEwM2YyLWU0NzAtNGIzYy1iYjc1LTNhMWRmMDhjODRiMSIsImMiOjR9&pageName=4103fbba1fd47f5f6003" target="_blank">
+                <div class="proyecto">
+                    <img src="img/img 11.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cadena de Hipermercado en Argentina</h3>
+                        <p>Power Bi</p>
+                    </div>
+                </div>
+             </a>
+              <a href="https://app.powerbi.com/view?r=eyJrIjoiMDE4ZWE3YzEtMDdhNS00NDZhLWJkZWItYTM5ZDU5OGNkNDk4IiwidCI6IjA4ZDEwM2YyLWU0NzAtNGIzYy1iYjc1LTNhMWRmMDhjODRiMSIsImMiOjR9&pageName=ReportSection" target="_blank">
+                <div class="proyecto">
+                    <img src="img/img 11.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Empresa de productos deportivos</h3>
+                        <p>Power Bi</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/agustina-folcia-486253234/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
